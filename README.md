@@ -54,4 +54,4 @@ This app employs the K-Nearest Neighbors (KNN) algorithm. It works as follows:
 
 ## 📜 License
 
-This project is licensed under the MIT License.
+This project is licensed under the GNU AGPLv3 License.
