@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 import os
 from stylesheet import custom_stylesheet
+st.set_page_config(page_title="Eco-Friendly Product Recommendation", page_icon="logo.jpeg")
 st.markdown(custom_stylesheet,unsafe_allow_html=True)
-
 st.markdown("<div class='header'>🌱 Eco-Friendly Product Recommendations</div>", unsafe_allow_html=True)
 
 st.markdown("<p style='color: #2E5733;'>Find sustainable products based on your preferences.</p>", unsafe_allow_html=True)
@@ -18,6 +18,7 @@ else:
 
 
 # Sidebar UI
+# st.sidebar.image("logo.jpeg", width=50)  
 st.sidebar.header("Filters")
 product_type = st.sidebar.selectbox("Select Product Type:", df['category'].unique() if not df.empty else [])
 eco_level = st.sidebar.slider("Minimum Eco-Friendly Score:", min_value=1, max_value=10, value=5)
